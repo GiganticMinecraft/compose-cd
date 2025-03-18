@@ -42,7 +42,7 @@ jobs:
 
       - name: shellcheck(github-pr-review)
         if: ${{ github.event_name }} == 'pull_request'
-        uses: reviewdog/action-shellcheck@v1.17.0
+        uses: reviewdog/action-shellcheck@57079a832290a049f49cee90984b072c870fb7d4 #1.29.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           filter_mode: added
